@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>𝓝𝓸𝓽𝓮𝓼 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <!-- If using PNG format, use the following line instead -->
+  <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+  <!-- If using JPEG format, use the following line instead -->
+  <link rel="icon" href="icon.png" type="image/jpeg"
+
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="textboxHeading"></div>
+    <textarea id="myTextarea" rows="8" cols="120" placeholder="Type here" spellcheck="false"></textarea>
+    <div id="wordCount">Word Count: 0 | Character Count: 0</div>
+    <div class="button-container">
+      <button onclick="clearNotes()">Clear</button>
+      <button onclick="undo()">Undo</button>
+      <button onclick="redo()">Redo</button>
+      <button onclick="toggleSpellCheck()">Toggle Spell Check</button>
+    </div>
+  </div>
+
+  <div id="markdownOutput"></div>
+
+  <script src="marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
